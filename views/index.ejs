@@ -1,0 +1,82 @@
+<%- include('partials/header.ejs') %>
+<body>
+    <h1>Developer Survey</h1>
+    <main>
+    <form action="/submit" method="POST">
+            <label for="name">What is your Name?</label>
+            <input type="text" name="name" id="name">
+            <label for="email">What is your Email</label>
+            <input type="email" name="email" id="email">
+            <label for="programming_language">What is your favorite Programming Language ?</label>
+            <select name="programming_language" id="programming_language">
+                <option value="none"></option>
+                <option value="python">Python</option>
+                <option value="javascript">Javascript</option>
+                <option value="c++">C++</option>
+                <option value="java">Java</option>
+                <option value="c#">C#</option>
+                <option value="php">PHP</option>
+                <option value="typescript">Typescript</option>
+                <option value="rust">Rust</option>                
+                <option value="golang">Go</option>
+                <option value="ruby">Ruby</option>
+            </select>
+            <label for="frontend">What is your favorite front-end framework ?</label>
+            <select name="frontend" id="frontend">
+                <option value="none"></option>
+                <option value="react">React</option>
+                <option value="angular">Angular</option>
+                <option value="vue">Vue</option>
+                <option value="svelte">Svelte</option>
+                <option value="dotnet">.NET</option>
+            </select>
+            <label for="backend">What is your favorite back-end framework ?</label>
+            <select name="backend" id="backend">
+                <option value="none"></option>
+                <option value="express">Express</option>
+                <option value="nestjs">NestJS</option>
+                <option value="django">Django</option>
+                <option value="aspnet">ASP.NET</option>
+                <option value="laravel">Laravel</option>
+                <option value="spring">Spring</option>
+                <option value="rails">Ruby on Rails</option>
+            </select>
+            <label for="experience">What is your Experience level as a developer ?</label>
+            <select name="experience" id="experience">
+                <option value="none"></option>
+                <option value="junior">Junior</option>
+                <option value="associate">Associate</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="senior">Senior</option>
+            </select>
+            <label for="db">What is your preferred choice of Database / DBMS ?</label>
+            <select name="db" id="db">
+                <option value="none"></option>
+                <option value="postgres">Postgres</option>
+                <option value="mysql">MySQL</option>
+                <option value="mongodb">MongoDB</option>
+                <option value="redis">Redis</option>
+            </select>
+            <label for="ide">What is your preferred choice of IDE / Code editor ?</label>
+            <select name="ide" id="ide">
+                <option value="none"></option>
+                <option value="vscode">Visual Studio Code</option>
+                <option value="sublime_text">Sublime Text</option>
+                <option value="pycharm">PyCharm</option>
+                <option value="intellij">IntelliJ</option>
+                <option value="eclipse">Eclipse</option>
+                <option value="visualstudio">Visual Studio</option>
+                <option value="jupyter">Jupyter Notebook</option>
+                <option value="netbeans">Netbeans</option>
+            </select>
+            <label for="t&c">
+                <input type="checkbox" name="tnc" id="tnc" required>
+                Terms and conditions apply
+            </label>
+            <button type="submit">
+                Submit
+            </button>
+        </form>
+    </main>
+</body>
+</html>

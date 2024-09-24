@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+
+/* survey form */
+
+* {
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+}
+
+body {
+    background-image: url("/assets/images/dev_background.webp");
+    background-size: cover;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    margin: auto;
+    border-radius: 2.5rem;
+    padding: 5rem;
+    max-width: 75%;
+    background-color: white;
+}
+
+form {
+    margin: auto;
+    display: flex;
+    width: 50rem;
+    flex-direction: column;
+}
+
+label {
+    font-size: 1.35rem;
+}
+
+input, select {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+button {
+    background-color: #800020;
+    font-size: 1.5rem;
+    color: white;
+    border-width: 0;
+    border-radius: 1rem;
+    width: 15rem;
+    margin: auto;
+    margin-top: .75rem;
+}
+
+/* confirmation message */
+#confirm-message {
+    padding: 1rem 5rem;
+    border-radius: 1rem;
+    width: 50rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    margin: 5rem auto;
+}
+
+#checkmark {
+    margin: auto;
+}
